@@ -1,0 +1,15 @@
+---
+import { navSections } from "../constants"
+---
+
+<header class="mt-10">
+    <nav>
+      <ul class="flex flex-wrap justify-center gap-10 text-2xl font-raleway">
+        {navSections.map(({ name, href }, i) => (
+          <li>
+            <a href={href} class="hover:underline">{name}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </header>

@@ -1,0 +1,22 @@
+---
+import { contacts } from "../constants"
+---
+
+<section class="mt-30 pt-20 mb-30 relative" id="contact">
+    <div class="flex flex-wrap justify-center gap-10">
+      {contacts.map(({ name, href }, i) => (
+        <a
+          href={href}
+          target="_blank"
+          class="border-1 border-secondary p-2 text-3xl rounded-xl"
+        >
+          {name}
+        </a>
+      ))}
+    </div>
+    <img
+      src="/looper.svg"
+      alt="Looper"
+      class="absolute -top-20 max-xs:top-20"
+    />
+  </section>

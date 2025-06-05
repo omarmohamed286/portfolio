@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+import Layout from "../layouts/index.astro";
+import NavBar from "../sections/NavBar.astro";
+import Hero from "../sections/Hero.astro"
+import About from "../sections/About.astro"
+import SelectedProjects from "../sections/SelectedProjects.astro";
+import ContactMe from "../sections/ContactMe.astro";
+
+---
+
+
+<Layout>
+	<NavBar></NavBar>
+	<main>
+		<Hero></Hero>
+		<About></About>
+		<SelectedProjects></SelectedProjects>
+		<ContactMe></ContactMe>
+	</main>
+</Layout>
